@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+/package-lock.json
+/.aliossrc
+/.aliossKeyrc
+/dist/
