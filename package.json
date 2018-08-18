@@ -1,6 +1,6 @@
 {
-  "name": "alioss-uploader",
-  "version": "1.0.0",
+  "name": "alioss-uploader-cli",
+  "version": "1.0.2",
   "description": "aliyun oss upload cli",
   "main": "index.js",
   "bin": {

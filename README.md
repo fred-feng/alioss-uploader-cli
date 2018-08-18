@@ -1,7 +1,7 @@
 aliyun oss upload cli
 
 ```
-npm i -g alioss-uploader
+npm i -g alioss-uploader-cli
 ```
 
 make file '.aliossrc'

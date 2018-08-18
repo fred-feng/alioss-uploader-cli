@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Created by Fred(qq:24242811) on 2018/8/18.
  */
@@ -19,7 +20,7 @@ class AliossUploader{
 		this.client = new OSS(options)
 	}
 	start(){
-		let outputPath = path.join(__dirname, this.options.srcPath)
+		let outputPath = path.join('./', this.options.srcPath)
 
 		let startTime = now()
 		co(function* () {
