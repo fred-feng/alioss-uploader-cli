@@ -8,10 +8,10 @@ make file '.aliossrc'
 ```
 {
     "accessKeyId": "***",
-	"accessKeySecret": "***",
-	"region": "oss-cn-hangzhou", // eg: oss-cn-hangzhou
-	"bucket": "stgame",
-	"prefix": "test", // oss directory prefix; eg: auto_upload_ci/test
+    "accessKeySecret": "***",
+    "region": "oss-cn-hangzhou", // eg: oss-cn-hangzhou
+    "bucket": "stgame",
+    "prefix": "test", // oss directory prefix; eg: auto_upload_ci/test
     "srcPath":"dist", // upload directory
     "exclude": ".*$" // Optional, default: .*$
 }
