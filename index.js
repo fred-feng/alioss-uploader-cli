@@ -33,7 +33,7 @@ class AliossUploader{
 			let prefix = this.options.prefix || ''
 			for (let i = 0; i < list.length; i++) {
 				const filePath = list[i];
-				const key = path.join(prefix, filePath.slice(outputPath.length))
+				const key = path.join(prefix, filePath.slice(outputPath.length)).replace(/\\/g, '/')
 				this.log(i, key, filePath)
 				yield this.client.put(key, filePath)
 			}
@@ -60,7 +60,7 @@ function browserFiles(folder, list){
 		let stat = fs.statSync(filePath)
 		if (stat.isDirectory()){
 			browserFiles(filePath, list)
-		}else if (file !== '.DS_Store'){
+		}else if (file !== '.DS_Store' && file !== 'Thumbs.db'){
 			list.push(filePath)
 		}
 	})
